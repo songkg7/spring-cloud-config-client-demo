@@ -6,10 +6,16 @@ spring:
       name: config
       profile: dev
 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: haril
+    password: haril
+
 management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: busrefresh
 server:
   port: 8889
